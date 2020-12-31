@@ -6,14 +6,17 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "plotly.js": "^1.58.4",
+    "plotly.js-dist": "^1.58.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-plotly.js": "^2.5.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "set PORT=7020 && react-scripts start",
-    "build": "react-scripts build",
+    "start": "set PORT=7020 && react-scripts --max_old_space_size=4096 start",
+    "build": "react-scripts  --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
